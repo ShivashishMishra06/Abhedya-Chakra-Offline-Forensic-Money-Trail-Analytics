@@ -1,0 +1,8 @@
+{
+  "name": "Forensic Analytics Engine",
+  "description": "Forensic money trail analysis, multi-tiered mule network detection, and Section 91 CrPC freeze notice generator for financial cybercrime investigations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

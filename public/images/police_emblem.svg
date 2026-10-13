@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <!-- Outer border circle -->
+  <circle cx="80" cy="80" r="76" fill="#0F0F0F" stroke="#C9A227" stroke-width="3"/>
+  <circle cx="80" cy="80" r="71" fill="none" stroke="#262626" stroke-width="1.5"/>
+
+  <!-- Official Police Navy Shield -->
+  <path d="M80 18 L126 34 V82 C126 112 80 138 80 138 C80 138 34 112 34 82 V34 Z" fill="#1F3A5F" stroke="#C9A227" stroke-width="2.5"/>
+
+  <!-- Inner Shield Core -->
+  <path d="M80 26 L118 40 V80 C118 104 80 126 80 126 C80 126 42 104 42 80 V40 Z" fill="#141414" stroke="#262626" stroke-width="1.5"/>
+
+  <!-- 8-Pointed Star of Justice / Service in Gold -->
+  <g transform="translate(80, 76)">
+    <!-- 8 Points -->
+    <path d="M0 -34 L7 -12 L30 -12 L12 2 L19 24 L0 10 L-19 24 L-12 2 L-30 -12 L-7 -12 Z" fill="#C9A227"/>
+    <circle cx="0" cy="0" r="16" fill="#1F3A5F" stroke="#C9A227" stroke-width="2"/>
+    <!-- 24-spoke Chakra simplified -->
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#F2F2F2" stroke-width="1"/>
+    <circle cx="0" cy="0" r="4" fill="#C9A227"/>
+    <line x1="0" y1="-12" x2="0" y2="12" stroke="#F2F2F2" stroke-width="1"/>
+    <line x1="-12" y1="0" x2="12" y2="0" stroke="#F2F2F2" stroke-width="1"/>
+    <line x1="-8.5" y1="-8.5" x2="8.5" y2="8.5" stroke="#F2F2F2" stroke-width="1"/>
+    <line x1="8.5" y1="-8.5" x2="-8.5" y2="8.5" stroke="#F2F2F2" stroke-width="1"/>
+  </g>
+
+  <!-- Laurel Wreath in Gold at bottom of shield -->
+  <path d="M48 98 C54 114 66 124 80 132 C94 124 106 114 112 98" fill="none" stroke="#C9A227" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Top Inscription Ribbon / Text -->
+  <rect x="36" y="132" width="88" height="18" rx="3" fill="#0A0A0A" stroke="#C9A227" stroke-width="1.5"/>
+  <text x="80" y="145" text-anchor="middle" font-family="'IBM Plex Sans', sans-serif" font-size="8.5" font-weight="700" fill="#F2F2F2" letter-spacing="1">INDORE POLICE</text>
+</svg>

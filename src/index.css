@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Merriweather', Georgia, serif;
+    --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F1F5F9;
+    color: #0F172A;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  /* Accessible focus indicators in official police gold (#C9A227) */
+  *:focus-visible {
+    outline: 2px solid #C9A227;
+    outline-offset: 2px;
+  }
+
+  /* Selection in official gold */
+  ::selection {
+    background-color: #C9A227;
+    color: #0A1C36;
+  }
+}
+
+/* Official Indian Police National Tricolor Ribbon */
+.police-tricolor {
+  background: linear-gradient(90deg, #FF9933 0%, #FF9933 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #138808 66.66%, #138808 100%);
+}
+
+/* Subtle Zebra table row styling for official government records */
+.table-zebra tr:nth-child(even) {
+  background-color: #F8FAFC;
+}
+.table-zebra tr:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+.table-zebra th {
+  background-color: #F1F5F9;
+  color: #0F172A;
+}
+
+/* Print Styles for Court-Ready Section 91 CrPC / Section 94 BNSS Notices */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 20mm;
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-family: var(--font-serif);
+      font-size: 9pt;
+      color: #333333;
+    }
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-family: var(--font-serif) !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-page-break {
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  thead {
+    display: table-header-group !important;
+  }
+
+  tr {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .print-container, .court-document {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-family: var(--font-serif) !important;
+  }
+}

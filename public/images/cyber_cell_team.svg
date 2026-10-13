@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1A1A1A" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Deep Slate/Black Command Center Backdrop -->
+  <rect width="1200" height="800" fill="#0C0E12"/>
+  <rect width="1200" height="800" fill="url(#grid)" opacity="0.6"/>
+
+  <!-- Command Room Screens & Architecture in dark tones -->
+  <rect x="150" y="80" width="900" height="380" rx="4" fill="#07090C" stroke="#1F3A5F" stroke-width="2"/>
+  <line x1="150" y1="120" x2="1050" y2="120" stroke="#262626" stroke-width="1"/>
+
+  <!-- Tactical Display Map Lines -->
+  <path d="M 220 280 Q 400 180, 600 240 T 980 200" fill="none" stroke="#C9A227" stroke-width="2" opacity="0.4"/>
+  <path d="M 280 340 Q 520 260, 780 320" fill="none" stroke="#1F3A5F" stroke-width="2" opacity="0.6"/>
+
+  <!-- Emblem Silhouette on Main Command Wall -->
+  <g transform="translate(600, 240) scale(1.4)" opacity="0.25">
+    <path d="M0 -70 L46 -54 V-6 C46 24 0 50 0 50 C0 50 -46 24 -46 -6 V-54 Z" fill="#C9A227"/>
+  </g>
+
+  <!-- Officer Team Presence (Department Group Presentation Desk) -->
+  <rect x="250" y="460" width="700" height="18" fill="#141414" stroke="#262626" stroke-width="1"/>
+  <rect x="280" y="478" width="640" height="120" fill="#0A0A0A" stroke="#1F3A5F" stroke-width="1.5"/>
+
+  <!-- Department Plate -->
+  <rect x="360" y="510" width="480" height="50" rx="3" fill="#0F0F0F" stroke="#C9A227" stroke-width="1.5"/>
+  <text x="600" y="532" text-anchor="middle" font-family="'Merriweather', serif" font-size="14" font-weight="700" fill="#F2F2F2" letter-spacing="1">CYBER CRIME BRANCH &middot; INDORE POLICE</text>
+  <text x="600" y="550" text-anchor="middle" font-family="'IBM Plex Sans', sans-serif" font-size="11" fill="#C9A227" letter-spacing="2">FINANCIAL FRAUD INVESTIGATION UNIT (1930)</text>
+
+  <!-- Subtle Vignette / Edge Shading -->
+  <rect width="1200" height="800" fill="none" stroke="#141414" stroke-width="20"/>
+</svg>
